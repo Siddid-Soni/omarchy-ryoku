@@ -20,6 +20,20 @@ outright.
 
 Safe to re-run any time — it's idempotent.
 
+## Uninstall
+
+```bash
+./uninstall.sh
+```
+
+Removes the symlinks/copies `install.sh` put in place and restores whatever
+was there before, from the backups `install.sh` made. Only touches paths it
+recognizes as its own (a symlink into this repo, or something it archived
+during consolidation) — anything else at those paths is left alone. Current
+`shell.json`/`keystroke.json` are backed up again before being replaced, so
+nothing is ever discarded outright. `evindor.keystroke` is left installed,
+since it isn't managed by this repo.
+
 ## Layout
 
 ```
@@ -33,6 +47,7 @@ plugins/
 shell.json                      Bar layout, enabled plugins, idle timings
 keystroke.json                  Config for the vendored evindor.keystroke plugin
 install.sh
+uninstall.sh
 ```
 
 ## Why symlinks, and why shell.json is copied instead
