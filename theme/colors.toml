@@ -1,0 +1,44 @@
+# Ryoku -- bone on black.
+mode = "dark"
+
+accent    = "#cdc4ba"   # ink -- workspace focus indicator, clock hover/selected
+selection = "#2a2724"
+muted     = "#7a756e"   # ink faint, 4.6:1
+
+background         = "#000000"
+dark_background    = "#000000"
+darker_background  = "#000000"
+lighter_background = "#17171a"   # Ryoku's "keycap dark"
+
+foreground        = "#cdc4ba"   # ink, 12:1
+dark_foreground   = "#7a756e"   # ink faint, 4.6:1
+light_foreground  = "#b0a9a0"   # ink dim, 9:1
+bright_foreground = "#f4f2ed"   # "keycap light"
+
+# Designed ink gradient border (not part of Ryoku's own published tokens --
+# their literal hex is an uncatalogued orange, and their web hairline
+# tokens are too faint for a 2px WM border). Kept in sync by hand with the
+# same literals in hyprland.lua, since this theme ships its own
+# hyprland.lua and suppresses the auto-generated one.
+hyprland_active_border   = "rgba(958f87ee) rgba(cdc4baee) 45deg"
+hyprland_inactive_border = "rgba(7a756e55)"   # ink faint @ ~33%
+
+# Ryoku's one real color, used sparingly: [bar] active, [polkit]/[lock]
+# text-error+border-error. Nowhere else should read as red.
+red        = "#e2342a"
+bright_red = "#f05a4e"
+
+# ANSI hues carry ~10% hue for terminal legibility (git diff, syntax
+# highlighting) rather than collapsing to pure greys.
+yellow         = "#cdc4ba"
+bright_yellow  = "#e8d8c9"
+orange         = "#b4705c"
+green          = "#8f9482"
+bright_green   = "#a9ae9c"
+cyan           = "#829094"
+bright_cyan    = "#9caaae"
+blue           = "#8a90a0"
+bright_blue    = "#a4aaba"
+magenta        = "#9c8c94"
+bright_magenta = "#b6a6ae"
+brown          = "#4a453f"

@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "palette": {
+    "accent": "theme",
+    "animations": "fluid",
+    "windowTransition": "slide",
+    "density": "compact"
+  },
+  "providers": {
+    "applications": {
+      "enabled": true
+    },
+    "ai": {
+      "provider": "claude",
+      "mode": "desktop"
+    },
+    "codex": {
+      "enabled": false,
+      "fast": true
+    }
+  }
+}
